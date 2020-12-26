@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'desciption_place.dart';
+import 'description_text.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.teal,
+        primarySwatch: Colors.blue,
         // This makes the visual density adapt to the platform that you run
         // the app on. For desktop platforms, the controls will be smaller and
         // closer together (more dense) than on mobile platforms.
@@ -30,47 +32,11 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Segundo reto"),
         ),
-        body: new Container(
-          height: double.infinity,
-          width: double.infinity,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(
-                  'assets/Tortuga.png'
-              ),
-              fit: BoxFit.cover,
-            ),
-          ),
-          child: new Stack(
-            children: [
-              Center(
-                child: Image.asset(
-                  'assets/Tortuga.png',
-                  fit: BoxFit.cover,
-                ),
-              ),
-              new Positioned(
-                left: 20.0,
-                top: 100,
-                child: new Icon(Icons.monetization_on, size: 36.0, color: const Color.fromRGBO(218, 165, 32, 1.0)),
-              ),
-              Center(
-                child: Container(
-                  color: Colors.black45,
-                  padding: EdgeInsets.all(15),
-                  child: Text(
-                    '¡Bello mar!',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 50,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
+        body: Column(
+          children: [
+            new DescriptionPlace(),
+            new DescriptionText(),
+          ],
         ),
       )//MyHomePage(title: 'Flutter Demo Home Page'),
     );
