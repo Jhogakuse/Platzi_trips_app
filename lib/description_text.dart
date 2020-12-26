@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class DescriptionText extends StatelessWidget{
+  String descriptionPlace;
+  DescriptionText(this.descriptionPlace);
   @override
   Widget build(BuildContext context) {
     final description = Container(
@@ -10,14 +12,11 @@ class DescriptionText extends StatelessWidget{
           right: 20.0
       ),
       child: Text(
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit auctor, "
-            "sapien leo praesent etiam iaculis metus ut, "
-            "consequat lacinia taciti ultrices at tellus integer. "
-            "Nulla ad conubia donec senectus netus ultrices semper, "
-            "metus malesuada ridiculus mollis varius himenaeos tellus, "
-            "potenti habitasse natoque phasellus integer tristique.",
+        descriptionPlace,
         style: TextStyle(
-            fontSize: 11.0
+            fontSize: 16.0,
+            fontWeight: FontWeight.normal,
+            color: Colors.black45,
         ),
         textAlign: TextAlign.justify,
       ),

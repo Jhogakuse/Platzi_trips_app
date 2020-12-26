@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'desciption_place.dart';
-import 'description_text.dart';
 
 void main() {
   runApp(MyApp());
@@ -34,8 +33,17 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children: [
-            new DescriptionPlace(),
-            new DescriptionText(),
+            new DescriptionPlace(
+                "Dwilli Ella",
+                4,
+              "Lorem ipsum dolor sit amet consectetur adipiscing elit auctor, "
+                  "sapien leo praesent etiam iaculis metus ut, "
+                  "consequat lacinia taciti ultrices at tellus integer. "
+                  "Nulla ad conubia donec senectus netus ultrices semper, "
+                  "metus malesuada ridiculus mollis varius himenaeos tellus, "
+                  "potenti habitasse natoque phasellus integer tristique.",
+            ),
+            //new DescriptionText(),
           ],
         ),
       )//MyHomePage(title: 'Flutter Demo Home Page'),
