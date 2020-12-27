@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'desciption_place.dart';
+import 'review_list.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Segundo reto"),
         ),
-        body: Column(
+        body: ListView(
           children: [
             new DescriptionPlace(
                 "Dwilli Ella",
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
                   "metus malesuada ridiculus mollis varius himenaeos tellus, "
                   "potenti habitasse natoque phasellus integer tristique.",
             ),
-            //new DescriptionText(),
+            new ReviewList(),
           ],
         ),
       )//MyHomePage(title: 'Flutter Demo Home Page'),

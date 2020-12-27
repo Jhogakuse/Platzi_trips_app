@@ -47,6 +47,7 @@ class DescriptionPlace extends StatelessWidget {
           ],
         ),
         new DescriptionText(descriptionPlace),
+        new DescriptionText(descriptionPlace),
       ],
     );
 
