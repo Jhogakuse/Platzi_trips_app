@@ -14,7 +14,7 @@ class Review extends StatelessWidget{
         left: 20.0,
       ),
       child: Text(
-        details,
+        comment,
         textAlign: TextAlign.left,
         style: TextStyle(
           fontFamily: "Lato",
