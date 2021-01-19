@@ -3,6 +3,7 @@ import 'star_description_place.dart';
 import 'star_half.dart';
 import 'star_border.dart';
 import 'description_text.dart';
+import 'button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
   String namePlace;
@@ -48,6 +49,12 @@ class DescriptionPlace extends StatelessWidget {
         ),
         new DescriptionText(descriptionPlace),
         new DescriptionText(descriptionPlace),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            ButtonPurple("Navigate")
+          ],
+        )
       ],
     );
 

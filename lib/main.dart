@@ -30,11 +30,9 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        /*
-        appBar: AppBar(
-          title: Text("Segundo reto"),
-        ),
-         */
+        /*appBar: AppBar(
+          title: Text("bienvenido"),
+        ),*/
         body: Stack(
           children: [
             ListView(
