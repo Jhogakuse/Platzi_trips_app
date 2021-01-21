@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'platzi_trips.dart';
+import 'platzi_trips_cupertino.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: PlatziTrips(),
+      home: PlatziTripsCupertino(),
     );
   }
 }
