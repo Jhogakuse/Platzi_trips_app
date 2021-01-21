@@ -1,18 +1,14 @@
 import 'package:flutter/material.dart';
-import 'desciption_place.dart';
-import 'review_list.dart';
-import 'header_appbar.dart';
+import 'platzi_trips.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Platzi Trip',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -29,31 +25,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Scaffold(
-        /*appBar: AppBar(
-          title: Text("bienvenido"),
-        ),*/
-        body: Stack(
-          children: [
-            ListView(
-              children: [
-                new DescriptionPlace(
-                  "Dwilli Ella",
-                  4,
-                  "Lorem ipsum dolor sit amet consectetur adipiscing elit auctor, "
-                      "sapien leo praesent etiam iaculis metus ut, "
-                      "consequat lacinia taciti ultrices at tellus integer. "
-                      "Nulla ad conubia donec senectus netus ultrices semper, "
-                      "metus malesuada ridiculus mollis varius himenaeos tellus, "
-                      "potenti habitasse natoque phasellus integer tristique.",
-                ),
-                new ReviewList(),
-              ],
-            ),
-            HeaderAppBar(),
-          ],
-        ),
-      )//MyHomePage(title: 'Flutter Demo Home Page'),
+      home: PlatziTrips(),
     );
   }
 }
