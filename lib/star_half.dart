@@ -5,7 +5,7 @@ class StarHalf extends StatelessWidget{
   Widget build(BuildContext context) {
     final star = Container(
       margin:EdgeInsets.only(
-          top:323.0,
+          top:350.0,
           right: 3.0
       ),
 

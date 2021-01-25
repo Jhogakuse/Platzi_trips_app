@@ -5,6 +5,6 @@ class SearchTrips extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return RandomWords();
+    return RandomWords("assets/img/Tucan.jpg");
   }
 }
