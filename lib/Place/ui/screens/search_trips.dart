@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'random_words.dart';
+import '../../../random_words.dart';
 
 class SearchTrips extends StatelessWidget{
   @override

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-import 'floating_action_button.dart';
+import '../../../widgets/floating_action_button.dart';
 
 class ProfileThumb extends StatelessWidget {
   String pathImg = "assets/img/p_playa_001.jpg";

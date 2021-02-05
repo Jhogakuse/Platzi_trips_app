@@ -3,7 +3,7 @@ import 'star_description_place.dart';
 import 'star_half.dart';
 import 'star_border.dart';
 import 'description_text.dart';
-import 'button_purple.dart';
+import '../../../widgets/button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
   String namePlace;

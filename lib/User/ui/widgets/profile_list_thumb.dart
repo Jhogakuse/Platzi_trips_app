@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_trips_app/profile_thumb.dart';
+import 'package:platzi_trips_app/User/ui/widgets/profile_thumb.dart';
 
 class ProfileListThumb extends StatelessWidget{
   @override

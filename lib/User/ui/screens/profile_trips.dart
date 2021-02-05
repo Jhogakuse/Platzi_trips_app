@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'profile_main_button.dart';
-import 'profile_list_thumb.dart';
+import '../widgets/profile_main_button.dart';
+import '../widgets/profile_list_thumb.dart';
 
 class ProfileTrips extends StatelessWidget {
   @override
